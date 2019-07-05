@@ -12,4 +12,11 @@ Staging via a haskellish quasiquotation. Maybe levitation?
 
 As for 'term \arrow term, we need
 - An evaluator for things typed by the module
-- Variou other stuff
+- Various other stuff
+
+Remember:
+
+The type safe interpreter/quotation/evaluator/meta-circular problem
+Coeffects or something - what is the underlying computation/runtime
+Typing a possible world
+Quoters/unquoters
