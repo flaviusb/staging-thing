@@ -18,6 +18,9 @@ a∈A,b∈B ⊢ (a→b) ∈ (A→B)
 a∈A,b∈B,l∈Label ⊢ (l: a ⇒ b) ∈ (l: A ⇒ B) ※ A Case
 
 
+syntax sugar: when you have a label by itself in a sum type, that expands to label: Unit.
+
+
 
 elimination forms have a bit of syntax
 ※ There also has to be a bit of a destructuring/'algebra' story here
