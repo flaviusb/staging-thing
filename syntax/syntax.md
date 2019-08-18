@@ -17,9 +17,26 @@ a∈A,b∈B,l∈Label,m∈Label ⊢ (l: a × m: b) ∈ (l: A × m: B)
 a∈A,b∈B ⊢ (a→b) ∈ (A→B)
 a∈A,b∈B,l∈Label ⊢ (l: a ⇒ b) ∈ (l: A ⇒ B) ※ A Case
 
+Label
+Labelled
+Row
+Product
+Sum
+
+
+μf. f = ıx∈Number. x → x + 1.
+μf. ıx∈Number. f x = x + 1.
+
+
+(_ &_) ∈ ∀r∈Product l∈Label a. where (r\l). (l: a × r) → l → a.
+(_−_)  ∈ ∀r∈Product l∈Label a. where (r\l). (l: a × r) → l → r.
+
+Commutation and distribution of + and × 
 
 syntax sugar: when you have a label by itself in a sum type, that expands to label: Unit.
 
+
+Current status: ⌜∀x.ıy∈x.μoption∈(«some»: x + «none»:⬢ ).μsome∈x→option.μnone∈option. some y = («some»: y). none = («none»:⬢ ).⌝
 
 
 elimination forms have a bit of syntax
@@ -32,6 +49,23 @@ elimination forms have a bit of syntax
 ※   «Mouse click»=
 match ... case
 
+\match
+  ıdx «Mouse movement»=(«dx»=dx × «dy»=7) ⇒ {
+      print dx.
+  }.
+  ımm∈(«dx»: Int × «dy»: Int) «Mouse movement»=mm ⇒ {
+    print (mm &«dx»).
+    print (mm &«dy»).
+  }.
+  «Mouse click»=«left» ⇒ {
+  }
+
+
+modules have a name and free variables for threading through stuff; you can do mutual stuff by importing the modules under a mu
+
+There is no 'global scope; each module can only see its internals plus whatever it imported. For modules that depend on each other, you need an ur-module that imports them both under a mu
+
+module $name 
 
 
 
@@ -74,9 +108,11 @@ module terms
   ÷
   ^
   √
-  ‹›
   «»
+  ‹›
   ⦇⦈
+  {}
+  ⦃⦄
   ⌜⌝
   ∀
   ∃
@@ -93,10 +129,12 @@ module terms
 
 present/absent
 ‹ › ≡ generic row brackets
-«,» ≡ replace , with ×
+⦃,⦄ ≡ replace , with ×
 ⦇,⦈ ≡ replace , with +
 
-⌜⌝  ≡ quotation
+«» ≡ literal label
+⌜⌝ ≡ quotation
+{} ≡ code blocks 
 x → y ≡ x^y
 ...   ≡ x^(-y)
 
