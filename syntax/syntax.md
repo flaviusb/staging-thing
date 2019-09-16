@@ -1,3 +1,38 @@
+No lambda. Just patterns/copatterns and equations. Mu gives you a name.
+
+μleft right. ıa b. left a b = right b a = a.
+
+μleft right. {
+  ıa b.
+  pattern: left a b
+  pattern: right b a
+  copattern: a
+}
+
+
+What is a name vs a projection/selection?
+
+scope
+equations
+
+
+
+Models are a tuple (Names, Entities) that operates like a Map from Name to Entity. Models are created with sprout. Scope under binding cooccurs with the extent of a quantifier.
+
+anaphora = sprout()
+
+
+(∃x y z) { }
+
+
+
+
+Note to self: scopes as Containers
+
+note to self: holes in containers as a way to have linear scopes that can be extended or sealed.
+
+note to self: sprout, prune, take. scopes as lightweight but explicitly instantiated. Modules as functions that take ∃ types and generate a scope - that is, the combination of ∃, →, type, and sprout. μ is something else, and is used for eg tying together explicit instantiations of modules.
+
 
 Brackets
 Escape (to)
