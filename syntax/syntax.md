@@ -1,4 +1,18 @@
-No lambda. Just patterns/copatterns and equations. Mu gives you a name.
+The toplevel was what was fucking me up. So, no toplevel! All modules inside μ's.
+
+Introductions and eliminations. Different things behave differently in each. This is how we can eg get 'patterns'.
+
+Think about parametricity.
+forall x : _ is pi x?
+forall _ : x is ∀ x?
+
+No lambda. Just patterns/copatterns and equations. Mu and fresh give you names. The difference in 'scope' comes out to a difference in behaviour in introduction forms (ie patterns). Mu'd names in a pattern identify the whole pattern, wheras fresh'd names just identify their bit of the pattern.
+
+⦃a: b, c: d⦄ = foo
+b = &a foo
+d = &c foo
+
+Pattern currying but it lets you fill in/shuffle parts of the pattern?
 
 μleft right. ıa b. left a b = right b a = a.
 
