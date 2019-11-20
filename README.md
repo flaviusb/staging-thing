@@ -28,6 +28,8 @@ Non-actual-object oriented programming, as in manipulating things in the domain 
 
 Mirrors
 
+Delphin etc - linear difference lists -> link to various first class polarity polymorphism stuff
+
 # Typed Multi-Stage Programming
 
 ## What is the motivation
