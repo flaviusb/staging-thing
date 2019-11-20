@@ -30,6 +30,8 @@ Mirrors
 
 Delphin etc - linear difference lists -> link to various first class polarity polymorphism stuff
 
+Quotation, evaluation, levity (in Purple/Pink style), polarity (delphin etc), and modality (modal types for mobile code) all have a part of the notion of 'stage'.
+
 # Typed Multi-Stage Programming
 
 ## What is the motivation
