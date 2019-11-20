@@ -20,12 +20,13 @@ The type safe interpreter/quotation/evaluator/meta-circular problem
 
 Coeffects or something - what is the underlying computation/runtime
 
-Typing a possible world
+Typing a possible world - modality
 
 Quoters/unquoters
 
 Non-actual-object oriented programming, as in manipulating things in the domain constructed in terms of the 'term module
 
+Mirrors
 
 # Typed Multi-Stage Programming
 
