@@ -1,5 +1,7 @@
 The toplevel was what was fucking me up. So, no toplevel! All modules inside μ's.
 
+% * * * ∈ % ^ ^ ^
+
 Introductions and eliminations. Different things behave differently in each. This is how we can eg get 'patterns'.
 
 Think about parametricity.
@@ -7,6 +9,18 @@ forall x : _ is pi x?
 forall _ : x is ∀ x?
 
 No lambda. Just patterns/copatterns and equations. Mu and fresh give you names. The difference in 'scope' comes out to a difference in behaviour in introduction forms (ie patterns). Mu'd names in a pattern identify the whole pattern, wheras fresh'd names just identify their bit of the pattern.
+
+project «a» foo
+
+project n ⦃n: x, _ ⦄ = x
+case ∈ in: l∈Label, m∈(v→r), ⦇l: v, _ ⦈ out: r
+case l (m∈(v→r)) ⦇l: v⦈ = m v
+case agglomoration is algebra
+
+Some Maybe analogue methods, like
+
+selectMap ∀x. m∈Label n∈(a→b) ⦇ m: a, x ⦈ → ⦇ m: b, x ⦈
+
 
 ⦃a: b, c: d⦄ = foo
 b = &a foo
