@@ -8,7 +8,7 @@ LMS (lightweight modular staging)
 Haskell template metaprogramming
 Metalua
 MetaOCaml
-CamlP4/CamlP5 etc
+CamlP4/CamlP5, ppx, etc
 Shonan challenge/various oleg work on staged compilation
 ASF+SDF
 THE Meta Environment
