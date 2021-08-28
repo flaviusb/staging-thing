@@ -14,13 +14,30 @@ The Expression Problem...
 
 Type safe code generation...
 1. You can't generate non-syntax-correct code, because types - that is, all manipulations of quoted code remain well-formed
+  - The extension to 'fragments' which are not well formed, but which we can typecheck how they are used to show that they only end up being used in ways that generate well formed code
+  - 'Holes' as an example which we can see as syntax sugar for a restricted case of this
 2. The type of the staged, generated code references the type of the generated code
   - 2 is made easier by having a context variable that takes part in typechecking bidirectionally, so that we can see the constraints generated code will have, even though we cannot necessarily fully type it without the context it is going to be reified in.
 
 ## The Data Type
 
-A multi sorted algebra, with labelled sums, products, and exponents. first class labels, first class cases, and first class patterns. Introduction vs elimination forms, change of direction, bidirectionality.
+A multi sorted algebra, with labelled sums, products, and exponents. first class labels, first class cases, and first class patterns. Introduction vs elimination forms, change of direction, bidirectionality. Modal types for mobile code. Intensional recursion through PCF.
 
 ## The rest
 
 Explicit name introduction via quantifiers. Staging via typed quasiquotation with typed holes. Lifting. Bidirectionality elaborated.
+
+---
+
+Ambients - coeffects + modal locations ⇒ target types
+Staging across this gives you cross compilation
+This is needed to get even fairly simple things like the web dev thing of server side rendering, client side rendering, rehydration, different capabilities, with conneg and mimetypes 'for free'.
+Bidir for synthesis.
++ve/-ve types for value/code distinction (value level destructuring/pattern matching etc, but also the Intensional PCF thing with the Godel-Lob thing and modal recursion)
+
+
+---
+
+References:
+
+"Intensionality, Intensional Recursion, and the Gödel-Löb axiom", G. A. Kavvos
